@@ -1,0 +1,41 @@
+.nav-product{
+    width: 100%;
+    background-color: aliceblue;
+    border-bottom-left-radius:100px;
+    border-bottom-right-radius:100px;
+    border: 1px groove;
+    
+}
+.nav-items{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    color: black;
+}
+.nav-item{
+    transition: 0.4s ease-in;
+}
+.nav-item:hover
+{
+   cursor: pointer; 
+   color: blue;
+}
+h2{
+    position: relative;
+}
+h2::after{
+    content:"";
+    width: 0;
+    height: 4px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    border-radius: 2px;
+    bottom: -10px;
+    transition: 0.4s ease-in;
+}
+h2:hover::after {
+    width: 100%;
+}
+
+

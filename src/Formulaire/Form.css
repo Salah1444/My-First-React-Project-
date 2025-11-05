@@ -1,0 +1,68 @@
+/* ====== Conteneur principal ====== */
+.Formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  width: 100%;
+  background: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+.Formulaire form {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.Formulaire h2 {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* ====== Champs de saisie ====== */
+.Formulaire input[type="text"],
+.Formulaire input[type="email"] {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.Formulaire input[type="text"]:focus,
+.Formulaire input[type="email"]:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+}
+
+/* ====== Bouton ====== */
+.Formulaire input[type="submit"] {
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Formulaire input[type="submit"]:hover {
+  background: #4f46e5;
+  transform: scale(1.03);
+}
+
+

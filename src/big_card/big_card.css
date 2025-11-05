@@ -1,0 +1,50 @@
+
+.big-card {
+  background: transparent;
+  padding: 60px 5%;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 40px auto;
+  max-width: 1300px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.big-card:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.big-card h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.big-card h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #0078ff;
+  border-radius: 2px;
+}
+
+.big-card p {
+  font-size: 1rem;
+  color: #444;
+  margin: 5px 0;
+}
+
+.big-card-items {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}

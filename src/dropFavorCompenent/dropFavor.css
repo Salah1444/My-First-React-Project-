@@ -1,0 +1,65 @@
+.DropFavor{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    border:4px solid white;
+    z-index: 99999;
+    
+}
+.DropFavor .favor-items{
+  overflow-y: scroll;
+  text-align: center;
+  height: 70%;
+  border: 1px solid black;
+  border-radius:10px;
+}
+.favor-items::-webkit-scrollbar{
+    display: none;
+}
+.DropFavor .card{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    background-color: #ffffff;
+    overflow: hidden;
+    color: black;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.DropFavor .card img{
+    width: 50px;
+    height: 50px;
+    
+}
+.DropFavor .card button{
+    padding: 5px 10px;
+    content: icon;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color:red;
+    cursor: pointer;
+    transition:0.5s ease; 
+}
+.DropFavor .card button:hover{
+ color: white;
+ background-color: red;
+}
+
+
+
+.DropFavor .DropFavor-colse{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
