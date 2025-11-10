@@ -1,0 +1,89 @@
+.collaboration-container {
+  width: 100%;
+  background-color: #f9fafb;
+  padding: 40px 0;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow: hidden;
+}
+
+.collaboration-container h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #111;
+  margin-left: 30px;
+}
+
+.companies {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  width: 100%;
+  height: 160px;
+}
+
+.company-track {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  animation: scroll 35s linear infinite;
+  width: max-content;
+}
+
+.company-item {
+  text-align: center;
+  width: 130px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.company-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: grayscale(95%);
+  transition: 0.3s ease;
+}
+
+.company-item:hover img {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.company-item p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Animation fluide et infinie */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .company-track {
+    gap: 70px;
+    animation-duration: 25s;
+  }
+
+  .company-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .collaboration-container h1 {
+    font-size: 28px;
+  }
+}

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import Collaboration from "../Collaboration/Collaboration";
 const About = () => {
   return (
+    <>
     <div class="about">
       <div class="about-content">
         <h1>À propos de nous</h1>
@@ -28,6 +30,8 @@ const About = () => {
         />
       </div>
     </div>
+    <Collaboration />
+    </>
   );
 };
 export default About;

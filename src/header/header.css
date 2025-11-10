@@ -84,8 +84,10 @@
   color: #ff4c4c;
 }
 
+
 .panier:hover .icon-cart {
   color: #0078ff;
+  cursor: pointer;
 }
 
 /* Compteurs */
