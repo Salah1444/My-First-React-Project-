@@ -1,32 +1,44 @@
+import { Link } from "react-router-dom";
 import "./dropCart.css";
-import { FaX } from "react-icons/fa6";
-import { FaTrashAlt } from "react-icons/fa";
-const DropCart = ({ cart, hideData, calculTotal,deletCartEl }) => {
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FaMinus, FaX } from "react-icons/fa6";
+import { deletCartEl, HideData } from "../redux/productSlice";
+import { useDispatch, useSelector } from "react-redux";
+import Panier from "../panier/panier";
+
+const DropCart = () => {
+  const dispatch = useDispatch();
+  const cart = useSelector((state) => state.products.cart) || []; // fallback []
+
   return (
     <div className="dropCart">
-      <FaX className="dropCart-colse" size={20} onClick={hideData} />
-      <h3> Votre Panier</h3>
-      <div className="cart-items">
-        {cart.length !== 0 ? (
-          cart.map((it,i) => (
-                         <>
-                          <div className="card" key={it.id}>
-                            <img src={it.imageUrl} alt={it.name} />
-                            <span>{it.name}</span>
-                            <span>{it.price}</span>
-                            <button onClick={()=>deletCartEl(i)} ><FaTrashAlt  className ="delet_favor_icon"  size={24}/></button>
-                          </div>
-                         </>
-        ))) : (
-          <p className="empty-cart">Votre panier est vide</p>
-        )}
+      <div className="row ">
+        <div className="col-md-4 d-flex  align-items-center ">
+          <FaX
+            className="dropCart-colse"
+            size={24}
+            onClick={() => {
+              dispatch(HideData());
+            }}
+          />
+        </div>
+        <div className="col-md-4  d-flex justify-content-center align-items-center">
+          
+          <h3 className="p-4"> Votre Panier</h3>
+        </div>
+        <div className="col-md-4 d-flex  justify-content-end align-items-center ">
+          {cart.length ? (
+            <div div className="commande-btn">
+              <Link to={"/ValideOrder"} onClick={()=>dispatch(HideData())} className="btnCommande">
+                Commande
+              </Link>
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
-        <hr />
-        <p className="Total">
-          <span>Total:</span>
-          <span>{calculTotal()}$</span>
-        </p>
-      
+       <Panier/> 
     </div>
   );
 };

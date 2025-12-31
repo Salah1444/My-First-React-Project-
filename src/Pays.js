@@ -1,5 +1,6 @@
 const SHOP_DATA = [
     {
+
       id: 1,
       title: 'Hats',
       routeName: 'hats',
@@ -10,6 +11,8 @@ const SHOP_DATA = [
           imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
           price: 25
         },
+       
+        
         {
           id: 2,
           name: 'Blue Beanie',
@@ -60,7 +63,7 @@ const SHOP_DATA = [
         }
       ]
     },
-
+     
     
     {
       id: 2,

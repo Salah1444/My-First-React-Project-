@@ -3,7 +3,7 @@ import NavProduct from "../navProduct/navProduct";
 import SHOP_DATA from "../Pays";
 import { useState } from "react";
 
-const Produits = ({ AddToCart, AddToFavor }) => {
+const Produits = () => {
   const [Nom, SetNom] = useState("");
   const FiltreCat = (cate) => {
     SetNom(cate.innerText);
@@ -19,8 +19,6 @@ const Produits = ({ AddToCart, AddToFavor }) => {
             title={cat.title}
             routeName={cat.routeName}
             items={cat.items}
-            AddToCart={AddToCart}
-            AddToFavor={AddToFavor}
           />
         ) : (Nom === "All" || Nom ==='') ? (
           <BIG_CARD
@@ -29,9 +27,8 @@ const Produits = ({ AddToCart, AddToFavor }) => {
             title={cat.title}
             routeName={cat.routeName}
             items={cat.items}
-            AddToCart={AddToCart}
-            AddToFavor={AddToFavor}
           />
+          
         ) : null
         
       )}

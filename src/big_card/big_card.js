@@ -9,8 +9,9 @@ function BIG_CARD({ id, title, routeName, items, AddToCart, AddToFavor }) {
       
 
       <div className="big-card-items">
-        {items.map((item) => (
+        {items.map((item,i) => (
           <Card
+            key={i}
             id_c={id}
             item={item}
             AddToCart={AddToCart}

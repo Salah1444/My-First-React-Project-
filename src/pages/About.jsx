@@ -3,6 +3,7 @@ import Collaboration from "../Collaboration/Collaboration";
 const About = () => {
   return (
     <>
+    
     <div class="about">
       <div class="about-content">
         <h1>À propos de nous</h1>

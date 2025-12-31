@@ -8,7 +8,7 @@ function Form(props) {
         <input type="text" placeholder="Votre Nom" name="nom" onChange={(e)=>props.change(e)} />
         <input type="text" placeholder="Votre Prénom" name="prenom" onChange={(e)=>props.change(e)} />
         <input type="email" placeholder="Votre Adresse  Email" name="email" onChange={(e)=>props.change(e)} />
-        <input type="text" placeholder="Description" name="Des" onChange={(e)=>props.change(e)}/>
+        <textarea   placeholder="message" name="message"  onChange={(e)=>props.change(e)}>Votre Message</textarea>
         <input type="submit" value="Valider" />
       </form>
     </div>

@@ -49,13 +49,14 @@
   transition: width 0.3s ease;
 }
 
-.Navbar-link:hover {
+.Navbar-link:hover,.Navbar-link:focus {
   color: #0078ff;
 }
 
-.Navbar-link:hover::after {
+.Navbar-link:hover::after,.Navbar-link:focus:after {
   width: 100%;
 }
+
 
 /* Section favoris + panier */
 .favor-panier {

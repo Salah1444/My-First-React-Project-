@@ -1,0 +1,15 @@
+
+.pan tbody::-webkit-scrollbar{
+    display: none;
+}
+.pan tbody {
+  display: block;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.pan thead, tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}

@@ -3,67 +3,28 @@
     top:0;
     right: 0;
     bottom: 0;
-    width: 300px;
+    width: 100%;
     height: 100vh;
     background-color: white;
     border:4px solid white;
     z-index: 99999;
     
 }
-.dropCart .cart-items{
-  overflow-y: scroll;
-  text-align: center;
-  height: 70%;
-  border: 1px solid black;
-}
-.cart-items::-webkit-scrollbar{
-    display: none;
-}
-.dropCart .card{
-    width: 90%;
-    height: 40px;
-    display: flex;
-    background-color: #ffffff;
-    overflow: hidden;
-    color: black;
-    align-items: center;
-    justify-content: space-around;
-    padding: 5px;
-    margin-bottom: 5px;
-}
-.dropCart .card img{
-    width: 50px;
-    height: 50px;
-    
-}
-.dropCart .card button{
-    padding: 5px 10px;
-    content: icon;
-    text-align: center;
-    border: none;
-    border-radius: 10px;
-    background-color: white;
-    color:red;
+
+
+.btnCommande{
+    border-radius: 0.7vw;
+    padding: 17px 93px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 700;
     cursor: pointer;
-    transition:0.5s ease; 
+    transition: 0.3s ease-in;
+    text-decoration: none;
 }
-.dropCart .card button:hover{
- color: white;
- background-color: red;
-}
-.dropCart .dropCart-colse{
-    position: absolute;
-    top:15px;
-    right: 15px;
-    cursor: pointer;
-}
-.Total{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-.Total :first-child{
-    font-weight: bold;
-    text-transform: uppercase;
+.btnCommande:hover{
+    opacity: 0.9;
+    transform: scale(1.04);
 }
 
+ 
