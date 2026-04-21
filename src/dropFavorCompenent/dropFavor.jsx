@@ -4,7 +4,7 @@ import {  FaX } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
 import { DeletFavor, HideData } from "../redux/productSlice";
 
-const DropFavor = ({}) => {
+const DropFavor = () => {
   const favor = useSelector(state => state.products.favor);
   const dispatch = useDispatch();
   return (

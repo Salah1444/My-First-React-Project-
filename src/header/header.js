@@ -8,7 +8,7 @@ function Header({ countCart, countFavor }) {
   const dispatch = useDispatch();
   return (
     <header className="header">
-      <span><img src={logo}/></span>
+      <span><img src={logo} alt="Logo Site" loading="lazy"/></span>
       <nav className="Navbar">
         <Link className="Navbar-link" to="/">Home</Link>
         <Link className="Navbar-link" to="/About">About</Link>

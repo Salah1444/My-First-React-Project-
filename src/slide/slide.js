@@ -5,12 +5,12 @@ function Slide(){
     return(
         <div className="slide">
             <div className="SlideAffiche">
-                <img src={list_img[0].imageUrl} alt={list_img[0].name}/>
+                <img src={list_img[0].imageUrl} alt={list_img[0].name} loading='lazy'/>
             </div>
             
             <div className="slideNav">
                     <div className="slideNavImg">
-                     {list_img.map((img)=><img id ={img.id}src={img.imageUrl} alt={img.name} onClick={SetImg}/>)}
+                     {list_img.map((img)=><img id ={img.id}src={img.imageUrl} alt={img.name} loading='lazy' onClick={SetImg}/>)}
                     </div>
                     <div className="slideButton">
                         <button className='buttonSlidePrev' onClick={slidePrev} >&lt;</button>
