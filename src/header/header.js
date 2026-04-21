@@ -4,16 +4,16 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { ShowData, ShowDataFavor } from "../redux/productSlice";
 import logo from "../logo.svg"
-function Header({ nom, countCart, countFavor }) {
+function Header({ countCart, countFavor }) {
   const dispatch = useDispatch();
   return (
     <header className="header">
       <span><img src={logo}/></span>
       <nav className="Navbar">
         <Link className="Navbar-link" to="/">Home</Link>
-        <Link className="Navbar-link" to="About">About</Link>
-        <Link className="Navbar-link" to="Produits">Products</Link>
-        <Link className="Navbar-link" to="Contact">Contact</Link>
+        <Link className="Navbar-link" to="/About">About</Link>
+        <Link className="Navbar-link" to="/Produits">Products</Link>
+        <Link className="Navbar-link" to="/Contact">Contact</Link>
       </nav>
 
       <div className="favor-panier">

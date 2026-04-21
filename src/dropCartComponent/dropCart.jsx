@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./dropCart.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { FaMinus, FaX } from "react-icons/fa6";
-import { deletCartEl, HideData } from "../redux/productSlice";
+import { FaX } from "react-icons/fa6";
+import {HideData } from "../redux/productSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Panier from "../panier/panier";
 

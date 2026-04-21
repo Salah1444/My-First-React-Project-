@@ -6,8 +6,6 @@ function BIG_CARD({ id, title, routeName, items, AddToCart, AddToFavor }) {
   return (
     <div className="big-card">
       <h2>{title}</h2>
-      
-
       <div className="big-card-items">
         {items.map((item,i) => (
           <Card
